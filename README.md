@@ -1,6 +1,37 @@
-# Gitree
+# gitree 🌴
 
 **A git-aware CLI tool to provide LLM context for coding projects by combining project files into a single file with a number of different formats to choose from.**
+
+<br>
+
+<p align="center">
+  <a href="https://github.com/shahzaibahmad05/gitree/stargazers">
+    <img alt="GitHub stars" src="https://img.shields.io/github/stars/shahzaibahmad05/gitree?logo=github" />
+  </a>
+    
+  <a href="https://github.com/shahzaibahmad05/gitree/graphs/contributors">
+    <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/shahzaibahmad05/gitree" />
+  </a>
+
+  <a href="https://github.com/shahzaibahmad05/gitree/network/members">
+    <img alt="GitHub forks" src="https://img.shields.io/github/forks/shahzaibahmad05/gitree?style=flat&color=blue" />
+  </a>
+
+  <a href="https://github.com/shahzaibahmad05/gitree/issues">
+    <img alt="Issues" src="https://img.shields.io/github/issues/shahzaibahmad05/gitree?color=orange" />
+  </a>
+
+  <a href="https://github.com/shahzaibahmad05/gitree/pulls">
+    <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/shahzaibahmad05/gitree?color=yellow" />
+  </a>
+  
+  <a href="https://pypi.org/project/gitree/">
+    <img src="https://img.shields.io/pypi/v/gitree?style=flat&logo=pypi&label=PyPI" />
+  </a>
+  <br />
+  <br />
+</p>
+
 
 ## ✨ Features
 
@@ -23,13 +54,13 @@
 
 ## 📦 Installation
 
-Run this command in your terminal:
+Install using pip (python package manager):
 
 ```
 # Install the latest version using pip
 pip install gitree    
 
-# Stable version (older, lacks features)
+# Get the stable version instead (older, lacks features)
 pip install gitree==0.1.3
 ```
 
