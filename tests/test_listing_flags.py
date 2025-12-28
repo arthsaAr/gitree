@@ -109,3 +109,25 @@ class TestListingFlags(unittest.TestCase):
         self.assertIn("file.txt", result_with_flag.stdout)
         self.assertIn(".hidden_file.txt", result_with_flag.stdout)
         self.assertIn(".hidden_dir", result_with_flag.stdout)
+
+
+    def test_entry_point_files_first(self):
+        # Create a folder and a file
+        tmp_dir = "random_dir"
+        tmp_file = "random_file.txt"
+        (self.root / tmp_dir).mkdir()
+        (self.root / tmp_file).write_text("data")
+
+        # Test with --files-first flag
+        result_files_first = self._run_cli("--files-first")
+
+        self.assertEqual(result_files_first.returncode, 0, msg=result_files_first.stderr)
+
+        files_first_output = result_files_first.stdout
+        file_index = files_first_output.find(tmp_file)
+        folder_index = files_first_output.find(tmp_dir)
+
+        self.assertTrue(
+            file_index < folder_index,
+            msg=f"Expected file before folder. File at {file_index}, Folder at {folder_index}"
+        )
