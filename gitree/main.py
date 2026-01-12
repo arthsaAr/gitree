@@ -85,7 +85,9 @@ def main() -> None:
         ZippingService.run(ctx, config, resolved_root)
 
     else:
-        DrawingService.draw(ctx, config, resolved_root)
+        DrawingService.run(ctx, config, resolved_root)
+        ctx.logger.log(Logger.INFO, 
+            f"Left DrawingService at: {round((time.time()-start_time)*1000, 2)} ms")
         
         if config.copy:
             CopyService.run(ctx, config, resolved_root)
