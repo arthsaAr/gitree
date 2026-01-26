@@ -225,7 +225,7 @@ class ParsingService:
         """
         semantic = ap.add_argument_group("SEMANTIC FLAGS (QUICK ACTIONS)")
 
-        semantic.add_argument("-f", "--full", action="store_true",
+        semantic.add_argument("-f", "--full", "--full-output", action="store_true",
             default=argparse.SUPPRESS,
             help="Shortcut for --max-depth 5 - show full directory tree up to 5 levels deep")
 
