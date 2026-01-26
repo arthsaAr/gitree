@@ -145,8 +145,11 @@ gt --export project --format tree
 gt -x project --format tree
 
 # OR use other formats
-gt -x project --format json
-gt -x project --format md
+gt -fx project --format json
+gt -fx project --format md
+
+# OR using --fmt alias
+gt -fx project --fmt json
 ```
 
 <img
@@ -251,7 +254,7 @@ gt -x project --format md
 | ----------------- | -------------------------------------------------------------------------------------------- |
 | `-z`, `--zip`     | Create a **zip archive** of the given directory (respects gitignore if `-g` is used).              |
 | `-x`, `--export`        | Save **project structure** along with its **contents** to a file with the format specified using `--format`. |
-| `--format`        | **Format output** only. Options: `tree`, `json`, `md`. Default: `tree`.                      |
+| `--format`, `--fmt`      | **Format output** only. Options: `tree`, `json`, `md`. Default: `tree`.                      |
 
 <details>
 <summary><h3>Full CLI Arguments List (Click to expand)</h3></summary>
