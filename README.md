@@ -38,9 +38,7 @@ pip install -U gitree
 
 ---
 
-### 💡 Usage
-
-**To literally get started, I would recommend doing this:**
+### 💡 Getting Started
 
 Open a terminal in any project and run:
 
@@ -53,7 +51,7 @@ gt
 ```
 
 <img
-  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/default.jpg"
+  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/default.png"
   alt="gitree demo"
   width="600"
 />
@@ -68,7 +66,7 @@ gt -f
 ```
 
 <img
-  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/full_output.jpg"
+  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/full_output.png"
   alt="gitree demo"
   width="600"
 />
@@ -83,7 +81,7 @@ gt -fe
 ```
 
 <img
-  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/full_output_emoji.jpg"
+  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/full_output_emoji.png"
   alt="gitree demo"
   width="600"
 />
@@ -101,13 +99,13 @@ gt --code -ci
 ```
 
 <img
-  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/interactive.jpg"
+  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/interactive.png"
   alt="gitree demo"
   width="600"
 />
 
 <img
-  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/copy_code_interactive.jpg"
+  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/copy_code_interactive.png"
   alt="gitree demo"
   width="600"
 />
@@ -129,7 +127,7 @@ gt -z project --code
 ```
 
 <img
-  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/zipping.jpg"
+  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/zipping.png"
   alt="gitree demo"
   width="600"
 />
@@ -153,7 +151,7 @@ gt -fx project --fmt json
 ```
 
 <img
-  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/export.jpg"
+  src="https://raw.githubusercontent.com/shahzaibahmad05/shahzaibahmad05/main/gallery/gitree/export.png"
   alt="gitree demo"
   width="600"
 />
@@ -211,20 +209,7 @@ gt -fx project --fmt json
 
 ---
 
-## ✨ Overall Features
 
-| Feature                           | Description                                                                   |
-| --------------------------------- | ----------------------------------------------------------------------------- |
-| **Tree Visualization** | Generate a structure for any directory for visualizing and understanding the codebase |
-| **Smart File Selection** | Control what's selected by the tool with custom ignore patterns, depth limits, and item caps |
-| **Interactive Selection** | Gain full control of the output by reviewing what's selected by the file selection service |
-| **Copy Your Codebase** | Instantly copy the whole codebase file contents to your clipboard to paste into LLMs |
-| **Multiple Export Formats** | Export your codebase contents to files using tree, json and markdown formats |
-| **Zipping the Whole Project** | Create project archives (optionally respecting `.gitignore` with `-g` flag) |
-| **Large/Binary Files Handling** | Automatically detects binary and large files and marks or skips them during export |
-
-
----
 
 ## ⚙️ Common Arguments
 
@@ -235,7 +220,7 @@ gt -fx project --fmt json
 | `-h`, `--help`    | Show the **help message** with all available options and exit.                                                  |
 | `-v`, `--version` | Display the **version number** of the tool.                                                                       |
 | `--verbose`       | Enable **logger output** to the console. Helpful for **debugging**.                                             |
-| `--config-user`   | Create a **default config.json** file in the current directory and open it in the **default editor**.           |
+| `--user-config`   | Create a **default config.json** file in the current directory and open it in the **default editor**.           |
 | `--no-config`     | Ignore both **user-level and global-level** `config.json` and use **default and CLI values** for configuration. |
 
 ### Semantic Flags (Quick Actions)
@@ -278,6 +263,7 @@ gt -fx project --fmt json
 | `--no-contents-for [path ...]` | Exclude **contents for specific files** for export/copy.                              |
 | `--max-file-size`            | **Maximum file size** in MB to include in exports (default: 1.0).                       |
 | `--override-files`           | **Override existing files**.                                                            |
+| `-s`, `--size`                | Show **file sizes** in the output.                                                       |
 
 ### Listing Override Options
 
