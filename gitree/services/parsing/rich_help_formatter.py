@@ -128,7 +128,7 @@ class RichHelpFormatter(argparse.HelpFormatter):
             "Display the version number of the tool"
         )
         table.add_row(
-            "--config-user",
+            "--user-config",
             "Create a default config.json file in the current directory\nand open that file in the default editor"
         )
         table.add_row(
